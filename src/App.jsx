@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 // DATABASE SIMULATION (Real system: PostgreSQL/MongoDB)
 // ============================================================
 // Data is now fetched from the MySQL backend via API
-const API_BASE = "http://localhost:3001/api";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3001/api";
 
 // ============================================================
 // HELPERS & CONSTANTS
